@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Cardiac Ultrasound Report</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 3rem 10rem;
+            font-family: 'Roboto', sans-serif;
+            max-width: 1024px;
+            margin-inline: auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .user-info {
+            font-size: 1rem;
+            font-weight: bold
+        }
+
+        .logo_img {
+            height: 7.14286rem;
+            min-height: 7.14286rem;
+        }
+
+        .custom-gap {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .section {
+            border-bottom: 1px solid #000;
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            gap: 1rem;
+        }
+
+        .column {
+            flex: 1;
+        }
+
+        h3 {
+            text-decoration: underline;
+        }
+
+        .img-grid {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            max-width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .table_row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Section 1: Title and Logo -->
+    <div class="section header">
+        <h1 style="color: #336cfb;">Cardiac Ultrasound Report</h1>
+        <img class="logo_img" src="logo.png" alt="Logo">
+    </div>
+
+    <!-- Section 2: Patient Information -->
+    <div class="section">
+        <div class="container">
+            <div class="column">
+                <table>
+                    <tr class="table_row">
+                        <td>Name:</td>
+                        <td class="user-info">Donovan, Lyve</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>Birthdate:</td>
+                        <td class="user-info">01/06/2020</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>Patient ID:</td>
+                        <td class="user-info">374399</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>Gender:</td>
+                        <td class="user-info">Female</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>Weight:</td>
+                        <td class="user-info">4.5 kg</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="column">
+                <table>
+                    <tr class="table_row">
+                        <td>Date:</td>
+                        <td class="user-info">01/06/2022</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>Tape</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>Sonographer:</td>
+                        <td class="user-info">Dr. Aslam, Muhammad Waseem</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>Ref. Doc.</td>
+                        <td class="user-info">Physician</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Section 3: Measurements -->
+    <div class="section">
+        <div class="container">
+            <div class="column custom-gap">
+                <h3>2D</h3>
+                <table>
+                    <tr class="table_row">
+                        <td>Ao Diam:</td>
+                        <td>1.5cm</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>LA Diam:</td>
+                        <td>1.9cm</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>LA/Ao:</td>
+                        <td>1.69</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="column custom-gap">
+                <h3>M-Mode</h3>
+                <table>
+                    <tr class="table_row">
+                        <td>IVSd:</td>
+                        <td>0.6cm</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>LVIDd:</td>
+                        <td>2.8cm</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>LVPWd:</td>
+                        <td>0.5cm</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="column custom-gap">
+                <h3>Doppler</h3>
+                <table>
+                    <tr class="table_row">
+                        <td>MV E Vel:</td>
+                        <td>0.99 m/s</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>MV DecT:</td>
+                        <td>150 ms</td>
+                    </tr>
+                    <tr class="table_row">
+                        <td>MV A Vel:</td>
+                        <td>0.65 m/s</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Images Grid -->
+    <div class="section">
+        <h3>Images</h3>
+        <div class="img-grid">
+            <img src="./scan" alt="scan">
+            <img src="scan2" alt="scan2">
+
+        </div>
+    </div>
+    <!-- Section 5: Referral Diagnosis Grid -->
+    <div class="section">
+        <h3>Referral Diagnosis</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque rem laudantium soluta optio sequi distinctio
+            voluptatem nesciunt excepturi! Praesentium, quaerat.</p>
+    </div>
+    <!-- Section 6: Findings Grid -->
+    <div class="section">
+        <h3>Findings</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique maxime, optio ducimus debitis qui earum
+            veritatis veniam eveniet molestias hic praesentium eligendi nisi eius odio et? Pariatur quibusdam quidem
+            provident magni dolore sapiente, laborum quasi adipisci, tenetur necessitatibus labore accusantium.</p>
+    </div>
+    <!-- Section 7: Findings Grid -->
+    <div class="section">
+        <h3>Conclusions</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique maxime, optio ducimus debitis qui earum
+            veritatis veniam eveniet molestias hic praesentium eligendi nisi eius odio et? Pariatur quibusdam quidem
+            provident magni dolore sapiente, laborum quasi adipisci, tenetur necessitatibus labore accusantium.</p>
+    </div>
+
+</body>
+
+</html>
